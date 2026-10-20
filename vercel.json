@@ -1,0 +1,9 @@
+{
+  "installCommand": "npm install",
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev -- --port $PORT",
+  "outputDirectory": "dist",
+  "rewrites": [
+    { "source": "/((?!api/|src/|@|node_modules/|.*\\..*).*)", "destination": "/index.html" }
+  ]
+}
