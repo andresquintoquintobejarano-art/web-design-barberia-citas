@@ -86,8 +86,29 @@ flowchart LR
 
 ## 7. Prototipo (Google Stitch)
 
-- 🔗 Enlace al proyecto en Stitch: _pendiente_
-- Capturas: `docs/stitch-dashboard.png`, `docs/stitch-detalle.png`, `docs/stitch-config.png` _(pendiente)_
+🔗 **Proyecto en Google Stitch:** [stitch.withgoogle.com/projects/11271825524715962112](https://stitch.withgoogle.com/projects/11271825524715962112)
+
+Las 3 vistas se diseñaron en Stitch en modo **Web**, con la misma identidad de la app: tema oscuro y acento dorado `#c9a227`. Cada una corresponde a una ruta de la sección 6.
+
+### Dashboard / Lista de citas (`/`)
+
+Resumen del día (citas de hoy, pendientes, completadas y barberos activos), filtros por cliente, barbero y estado, y la tabla de citas con su estado y el botón **Ver**, que abre el detalle. Datos: `GET /api/citas`.
+
+<img src="docs/stitch-dashboard.png" alt="Dashboard de citas" width="700">
+
+### Detalle de cita (`/citas/:id`)
+
+Tarjetas con el cliente, el barbero, el servicio y la fecha; acciones para completar, reprogramar o cancelar; historial de la cita y el acceso a **Generar recordatorio con IA**, que lleva a Configuración. Datos: `GET /api/citas?id=:id`.
+
+<img src="docs/stitch-detalle.png" alt="Detalle de la cita" width="700">
+
+### Configuración / Asistente IA (`/configuracion`)
+
+A la izquierda, el asistente que arma el mensaje con **Gemini** según la cita, el objetivo y el tono, y lo deja listo para copiar o enviar por WhatsApp. A la derecha, el estado de las 3 integraciones (**Google Sheets**, **Gemini API**, **Vercel + GitHub Actions**) y el catálogo de barberos y servicios. Datos: `POST /api/gemini` y `GET /api/citas?recurso=clientes|barberos|servicios`.
+
+<img src="docs/stitch-config.png" alt="Configuración y asistente IA" width="700">
+
+> Algunos datos del prototipo son ilustrativos (fotos, puntos de fidelización, sedes); la app real muestra lo que hay en las 4 hojas de Google Sheets.
 
 ## 8. Proyecto funcionando
 
