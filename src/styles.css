@@ -1,0 +1,9 @@
+body { font-family: system-ui, sans-serif; margin: 0; background: #111; color: #eee; }
+nav { display: flex; gap: 1rem; padding: 1rem 2rem; background: #1b1b1b; border-bottom: 2px solid #c9a227; }
+nav a { color: #c9a227; text-decoration: none; font-weight: 600; }
+main { padding: 2rem; max-width: 900px; margin: auto; }
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: .6rem; border-bottom: 1px solid #333; text-align: left; }
+button { background: #c9a227; border: 0; padding: .6rem 1rem; border-radius: 6px; cursor: pointer; font-weight: 600; }
+textarea { width: 100%; min-height: 80px; margin: .5rem 0; }
+.card { background: #1b1b1b; padding: 1rem; border-radius: 8px; margin-top: 1rem; }
