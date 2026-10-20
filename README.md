@@ -157,7 +157,5 @@ Ver [`docs/GIT_FLOW.md`](docs/GIT_FLOW.md): ramas `feature/*`, Pull Requests obl
 
 | Integrante | Rol |
 |---|---|
-| _Nombre_ (líder) | Repositorio y arquitectura |
-| _Nombre_ | UI/UX y Stitch |
-| _Nombre_ | API Sheets + Gemini |
-| _Nombre_ | Documentación y video |
+| Davier Andrés Quinto Bejarano (líder) | Repositorio, arquitectura y API (Google Sheets + Gemini) |
+| Manuela Córdoba Robledo | UI/UX en Google Stitch, documentación y video |
