@@ -67,6 +67,8 @@ Empiezan con el tipo de cambio y dicen **qué** se hizo:
 | #1 | `feature/esqueleto-inicial` | Proyecto React + Vite, las 3 vistas, funciones `/api` para Sheets y Gemini, CI y configuración de Vercel | Davier | — (merge de Davier) |
 | #2 | `feature/prototipo-stitch` | Prototipo de las 3 vistas en Google Stitch (enlace y capturas en el README) | Manuela | Davier |
 | #3 | `docs/equipo-y-git-flow` | Este documento y el equipo en el README | Manuela | Davier |
+| #4 | `docs/guion-video` | Guion del video de presentación (`docs/GUION_VIDEO.md`) | Manuela | Davier |
+| #5 | `docs/ajustes-finales-readme` | Ajustes finales del README: captura del proyecto funcionando y URL de instalación | Manuela | Davier |
 
 ## Cuidado con las claves
 
