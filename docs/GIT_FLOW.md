@@ -69,6 +69,7 @@ Empiezan con el tipo de cambio y dicen **qué** se hizo:
 | #3 | `docs/equipo-y-git-flow` | Este documento y el equipo en el README | Manuela | Davier |
 | #4 | `docs/guion-video` | Guion del video de presentación (`docs/GUION_VIDEO.md`) | Manuela | — (merge de Manuela) |
 | #5 | `docs/ajustes-finales-readme` | Ajustes finales del README: captura del proyecto funcionando, URL de instalación y nota del video | Manuela | — (merge de Manuela) |
+| #6 | `docs/enlace-video` | Enlace del video de presentación en el README (sección 9) | Manuela | — (merge de Manuela) |
 
 ## Cuidado con las claves
 
@@ -76,4 +77,4 @@ Empiezan con el tipo de cambio y dicen **qué** se hizo:
 - En el repositorio solo está `.env.example`, con valores de ejemplo.
 - En Vercel las claves se configuran como **variables de entorno** del proyecto.
 
-> Los PR #4 y #5 los unió Manuela sin revisión porque, el día de la entrega, Davier no estaba disponible por un motivo de fuerza mayor.
+> Los PR #4, #5 y #6 los unió Manuela sin revisión porque, el día de la entrega, Davier no estaba disponible por un motivo de fuerza mayor.
