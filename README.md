@@ -118,7 +118,7 @@ El Dashboard corriendo con `npm run dev`, mostrando las citas que llegan desde G
 
 ## 9. Video de presentación
 
-🎥 _Enlace pendiente (máx. 5 min)_. Guion en [`docs/GUION_VIDEO.md`](docs/GUION_VIDEO.md).
+🎥 **Ver video:** [https://youtu.be/6V99G4cFp-k](https://youtu.be/6V99G4cFp-k). Guion en [`docs/GUION_VIDEO.md`](docs/GUION_VIDEO.md).
 
 > **Nota:** por un motivo de fuerza mayor, Davier no pudo participar en la grabación. El video lo presenta Manuela, que explica también la parte técnica que lideró Davier (stack, diagramas y esqueleto).
 
