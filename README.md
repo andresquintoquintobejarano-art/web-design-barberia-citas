@@ -112,7 +112,9 @@ A la izquierda, el asistente que arma el mensaje con **Gemini** según la cita, 
 
 ## 8. Proyecto funcionando
 
-![Screenshot](docs/screenshot.png) _(pendiente)_
+El Dashboard corriendo con `npm run dev`, mostrando las citas que llegan desde Google Sheets a través de `GET /api/citas`:
+
+![Dashboard funcionando con datos de Google Sheets](docs/screenshot.png)
 
 ## 9. Video de presentación
 
@@ -139,7 +141,7 @@ web-design-barberia-citas/
 ## 11. Instalación y ejecución
 
 ```bash
-git clone https://github.com/<usuario>/web-design-barberia-citas.git
+git clone https://github.com/andresquintoquintobejarano-art/web-design-barberia-citas.git
 cd web-design-barberia-citas
 npm install
 cp .env.example .env     # completar claves (nunca subir .env)
