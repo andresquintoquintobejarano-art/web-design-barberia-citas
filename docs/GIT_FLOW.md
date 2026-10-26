@@ -67,11 +67,13 @@ Empiezan con el tipo de cambio y dicen **qué** se hizo:
 | #1 | `feature/esqueleto-inicial` | Proyecto React + Vite, las 3 vistas, funciones `/api` para Sheets y Gemini, CI y configuración de Vercel | Davier | — (merge de Davier) |
 | #2 | `feature/prototipo-stitch` | Prototipo de las 3 vistas en Google Stitch (enlace y capturas en el README) | Manuela | Davier |
 | #3 | `docs/equipo-y-git-flow` | Este documento y el equipo en el README | Manuela | Davier |
-| #4 | `docs/guion-video` | Guion del video de presentación (`docs/GUION_VIDEO.md`) | Manuela | Davier |
-| #5 | `docs/ajustes-finales-readme` | Ajustes finales del README: captura del proyecto funcionando y URL de instalación | Manuela | Davier |
+| #4 | `docs/guion-video` | Guion del video de presentación (`docs/GUION_VIDEO.md`) | Manuela | — (merge de Manuela) |
+| #5 | `docs/ajustes-finales-readme` | Ajustes finales del README: captura del proyecto funcionando, URL de instalación y nota del video | Manuela | — (merge de Manuela) |
 
 ## Cuidado con las claves
 
 - Las claves reales (Gemini y la cuenta de servicio de Google) van **solo** en el archivo `.env`, que está en el `.gitignore`.
 - En el repositorio solo está `.env.example`, con valores de ejemplo.
 - En Vercel las claves se configuran como **variables de entorno** del proyecto.
+
+> Los PR #4 y #5 los unió Manuela sin revisión porque, el día de la entrega, Davier no estaba disponible por un motivo de fuerza mayor.
