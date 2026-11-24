@@ -6,8 +6,10 @@ export default async function handler(req, res) {
   }
   try {
     const { prompt } = req.body;
+    // gemini-2.0-flash fue retirado por Google. El modelo se puede cambiar con GEMINI_MODEL sin tocar el código.
+    const modelo = process.env.GEMINI_MODEL || "gemini-3.8-flash";
     const r = await fetch(
-      "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent",
+      `https://generativelanguage.googleapis.com/v1beta/models/${modelo}:generateContent`,
       {
         method: "POST",
         headers: { "Content-Type": "application/json", "x-goog-api-key": process.env.GEMINI_API_KEY },
