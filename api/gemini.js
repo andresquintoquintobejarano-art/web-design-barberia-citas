@@ -8,14 +8,18 @@ export default async function handler(req, res) {
     const { prompt } = req.body;
     // gemini-2.0-flash fue retirado por Google. El modelo se puede cambiar con GEMINI_MODEL sin tocar el código.
     const modelo = process.env.GEMINI_MODEL || "gemini-3.8-flash";
-    const r = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/${modelo}:generateContent`,
-      {
+    const pedir = () =>
+      fetch(`https://generativelanguage.googleapis.com/v1beta/models/${modelo}:generateContent`, {
         method: "POST",
         headers: { "Content-Type": "application/json", "x-goog-api-key": process.env.GEMINI_API_KEY },
         body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] }),
-      }
-    );
+      });
+    // Si Gemini está saturado (503) o con límite (429), se reintenta hasta 2 veces
+    let r = await pedir();
+    for (let intento = 1; intento <= 2 && (r.status === 503 || r.status === 429); intento++) {
+      await new Promise((listo) => setTimeout(listo, 1500 * intento));
+      r = await pedir();
+    }
     const data = await r.json();
     // Si Gemini responde con error (clave inválida, modelo no disponible, límite), se muestra el motivo
     if (!r.ok || data.error) {
